@@ -2,7 +2,49 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div class="container mt-3">
+    <div class="row justify-content-center card-row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/Ressources/Cerveau.jpg" class="card-img-top" alt="Santé auditive">
+                <div class="card-body">
+                    <h5 class="card-title">Ne négligez pas votre santé mentale</h5>
+                    <a href="@Url.Action("Inform", "Health")" class="btn btn-primary" style="background-color:white">Je m'informe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/Ressources/messagerie.jpg" class="card-img-top" alt="Messagerie">
+                <div class="card-body">
+                    <h5 class="card-title">Contactez vos médecins facilement</h5>
+                    <a href="@Url.Action("Discover", "Messaging")" class="btn btn-primary" style="background-color:white">Découvrir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="~/Ressources/Medecin.png" alt="Docteur" class="doctor-image">
+</div>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <img src="~/Ressources/Calendrier.png" alt="Calendrier" class="img-fluid custom-img">
+            <p class="image-caption">Accédez simplement et rapidement à des médecins</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="~/Ressources/Sante.png" alt="Calendrier" class="img-fluid custom-img">
+            <p class="image-caption">Gérez votre santé de façon sécurisée : compte, documents, rendez-vous</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="~/Ressources/PreventionSante.png" alt="Calendrier" class="img-fluid custom-img">
+            <p class="image-caption">Prévention : grâce à des messages de sensibilisation</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+</div>-->
